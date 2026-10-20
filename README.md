@@ -10,7 +10,10 @@
 
 Признак `duration` исключён из обучения: продолжительность разговора неизвестна до звонка, а модель предполагается использовать для предварительного отбора клиентов.
 
-Исходные данные: [`data/raw/banking.csv`](data/raw/banking.csv).
+
+Исходный набор данных — [Bank Marketing (UCI Machine Learning Repository)](https://archive.ics.uci.edu/dataset/222/bank+marketing), авторы: S. Moro, P. Cortez, P. Rita. В проекте используется подготовленная версия `banking.csv` с числовой целевой переменной.
+
+Исследование выполнялось на Python 3.13.2.
 
 ## Ход работы
 
