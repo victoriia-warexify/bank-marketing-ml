@@ -150,6 +150,24 @@ python -m pip install -r requirements.txt
 `07_temporal_validation.ipynb` запускается отдельно от остальных ноутбуков и заново обучает Logistic Regression. Для его выполнения необходимы файлы `data/raw/banking.csv` и `data/raw/bank-additional-full.csv`.
 
 
+### Тестирование
+
+Для проверки предобработки используются автоматические тесты `pytest`. Они проверяют преобразование признаков, обработку неизвестных категорий и работу пайплайна.
+
+Установить зависимости для разработки:
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+Запустить тесты:
+
+```bash
+python -m pytest tests/ -v
+```
+
+Тесты также автоматически запускаются через GitHub Actions при каждом push и Pull Request.
+
 
 ## Ограничения
 
